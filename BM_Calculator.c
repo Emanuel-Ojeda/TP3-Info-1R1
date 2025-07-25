@@ -9,12 +9,17 @@ float BMI;
 
 int main()
 {
+     do{
     printf("Ingrese el peso en Kg:\t");
     scanf("%f",&peso);
 
     printf("Ingrese la altura en metro:\t");
     scanf("%f",&altura);
-    
+     if (peso < 0 || altura < 0);{
+         printf("Error: ni el peso ni la altura pueden ser negativos\n");
+     }
+    }while (peso < 0 || altura < 0);
+     
     alturacuadrada = altura * altura;
     
     BMI = peso / alturacuadrada;
